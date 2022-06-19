@@ -1,0 +1,6 @@
+name=Snake
+author=Giovanni SCARPELLINO
+description=A simple snake
+bundleID=com.gio.snake
+version=0.1
+buildNumber=100

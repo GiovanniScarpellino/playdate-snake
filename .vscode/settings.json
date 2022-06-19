@@ -1,0 +1,13 @@
+{
+	"Lua.diagnostics.globals": [
+		"playdate",
+		"Dot",
+		"import",
+		"down",
+		"snake",
+		"direction",
+		"apple",
+		"gfx",
+		"gameState"
+	]
+}
