@@ -14,11 +14,13 @@ function Dot:new (x, y, dotSize)
 	return o
 end
 
+-- Set x and save previousX to draw snake
 function Dot:setX(x)
 	self.previousX = self.x
 	self.x = x
 end
 
+-- Set y and save previousY to draw snake
 function Dot:setY(y)
 	self.previousY = self.y
 	self.y = y

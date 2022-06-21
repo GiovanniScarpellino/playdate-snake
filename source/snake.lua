@@ -23,6 +23,7 @@ function Snake:checkApple(apple)
 	end
 end
 
+-- Draw the snake
 function Snake:draw()
 	for i = 0, self.dotLength - 1 do
 		if i == 0 then
@@ -41,6 +42,7 @@ function Snake:draw()
 	end
 end
 
+-- Create a dot to the snake
 function Snake:addDot()
 	if self.dotLength == 0 then
 		self.dots[self.dotLength] = Dot:new(0, 0, self.dotSize)
@@ -51,6 +53,7 @@ function Snake:addDot()
 	self.dotLength = self.dotLength + 1
 end
 
+-- Snake moves
 function Snake:move()
 	if direction == "DOWN" then
 		self.down(self)
@@ -61,8 +64,6 @@ function Snake:move()
 	elseif direction == "RIGHT" then
 		self.right(self)
 	end
-
-	self:draw()
 end
 
 function Snake:down ()

@@ -8,6 +8,7 @@ function Apple:new ()
 	local o = {}
 	setmetatable(o, self)
 	self.__index = self
+	-- Set random position of apple
 	self.x = math.floor(math.random(self.dotSize, screenWidth - self.dotSize))
 	self.x = self.x - (self.x % self.dotSize)
 	self.y = math.floor(math.random(self.dotSize, screenHeight - self.dotSize))
